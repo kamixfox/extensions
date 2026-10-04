@@ -14,6 +14,10 @@ extension:
   color1: "#83eb34"
   color2: "#a3d94e"
   color3: "#4a6635"
+  menus:
+    boolean:
+      - "yes"
+      - "no"
 
 blocks:
   - opcode: commentReporter
@@ -33,3 +37,13 @@ blocks:
       COMMENT:
         type: string
         defaultValue: "comment"
+  - opcode: commentCblock
+    blockType: cblock
+    text: "comment [COMMENT] run? [RUN]"
+    arguments:
+      COMMENT:
+        type: string
+        defaultValue: "comment"
+      RUN:
+        type: string
+        menu: boolean
