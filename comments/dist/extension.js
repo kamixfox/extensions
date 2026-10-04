@@ -36,6 +36,21 @@
               },
             },
           },
+          {
+            opcode: "commentCblock",
+            blockType: Scratch.BlockType.CONDITIONAL,
+            text: "comment [COMMENT] run? [RUN]",
+            arguments: {
+              COMMENT: {
+                type: Scratch.ArgumentType.STRING,
+                defaultValue: "comment",
+              },
+              RUN: {
+                type: Scratch.ArgumentType.BOOLEAN,
+                defaultValue: false,
+              },
+            },
+          },
         ],
       };
     }
@@ -45,7 +60,11 @@
     }
 
     commentInline(args, util) {
-      return ;
+      /* empty */
+    }
+
+    commentCblock(args, util) {
+      return args.RUN;
     }
   }
 

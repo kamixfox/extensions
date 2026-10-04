@@ -33,3 +33,13 @@ blocks:
       COMMENT:
         type: string
         defaultValue: "comment"
+  - opcode: commentCblock
+    blockType: cblock
+    text: "comment [COMMENT] run? [RUN]"
+    arguments:
+      COMMENT:
+        type: string
+        defaultValue: "comment"
+      RUN:
+        type: boolean
+        defaultValue: false
