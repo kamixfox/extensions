@@ -5,7 +5,7 @@ author: "sandisk/mc20000 jamie@sdisk.us"
 license: "Apache-2.0"
 
 entryPoint: "src/index.js"
-outputPath: "dist/extension.js"
+outputPath: "../dist/comments.js"
 
 extension:
   id: "comments"
